@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>🎯 Number Guessing Game</h1>
+    
+    <!-- Input Field -->
+    <input type="number" id="guessInput" placeholder="Enter your guess (1-9)" min="1" max="9" />
+
+    <!-- Result/Message Box -->
+    <div class="message-box" id="message">Start guessing...</div>
+    
+    <!-- Buttons -->
+    <div class="buttons">
+      <button class="play" id="playBtn" onclick="playGame()">Play</button>
+      <button class="quit" id="quitBtn" onclick="quitGame()">Quit</button>
+      <button class="restart" id="restartBtn" onclick="restartGame()" style="display:none;">Restart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
